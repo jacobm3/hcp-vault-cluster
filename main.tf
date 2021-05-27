@@ -4,10 +4,6 @@ resource "hcp_vault_cluster" "demo_vault_cluster" {
   public_endpoint = true
 }
 
-resource "hcp_vault_cluster_admin_token" "demo_vault_admin_token" {
-  cluster_id = hcp_vault_cluster.demo_vault_cluster.cluster_id
-}
-
 resource "hcp_hvn" "main" {
   hvn_id         = "demo-hvn"
   cloud_provider = "aws"
