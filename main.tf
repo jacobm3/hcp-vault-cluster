@@ -9,8 +9,8 @@ resource "hcp_vault_cluster_admin_token" "demo_vault_admin_token" {
 }
 
 resource "hcp_hvn" "main" {
-  hvn_id         = "main-hvn"
+  hvn_id         = "demo-hvn"
   cloud_provider = "aws"
   region         = "us-west-2"
-  cidr_block     = "10.20.1.0/24"
+  cidr_block     = "10.20.2.0/24"
 }
