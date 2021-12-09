@@ -1,6 +1,6 @@
 resource "hcp_vault_cluster" "demo_vault_cluster" {
   hvn_id     = hcp_hvn.main.hvn_id
-  cluster_id = "hcp-tf-demo-vault-cluster"
+  cluster_id = "demo-cluster"
   public_endpoint = true
 }
 
